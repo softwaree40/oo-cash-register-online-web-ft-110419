@@ -20,7 +20,7 @@ class CashRegister
      end
      def items
          @items << title
-        binding.pry
+        #binding.pry
      end
 end
 
