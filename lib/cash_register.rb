@@ -20,7 +20,7 @@ class CashRegister
        end
      end
      def items(title,price,quantity = 0)
-        
+        @@ll
          binding.pry
     end
    
