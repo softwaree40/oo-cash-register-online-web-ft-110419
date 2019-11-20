@@ -19,7 +19,7 @@ class CashRegister
         "There is no discount to apply."
        end
      end
-     def items
+     def items(title,price,quantity = 0)
         
         
     end
