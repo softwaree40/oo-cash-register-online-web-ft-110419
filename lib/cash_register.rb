@@ -13,6 +13,8 @@ class CashRegister
          @total-=discount
          if discount != 0
         "After the discount, the total comes to $#{@total.to_i}."
+      else 
+        
         
      end
 end
