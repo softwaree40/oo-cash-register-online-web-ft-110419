@@ -9,10 +9,10 @@ class CashRegister
       #binding.pry
      end
      def add_item(title,price,quantity = 1)
-        
+        @all_array = []
         @total+=price * quantity
         @all_array << title 
-        #binding.pry
+        binding.pry
      end
      def apply_discount
          discount = @total * (@discount.to_f / 100)
