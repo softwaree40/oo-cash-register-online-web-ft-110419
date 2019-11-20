@@ -4,7 +4,9 @@ class CashRegister
      @all
      def initialize(discount = 0)
       @total = 0
-      @discount = discount 
+      @discount = discount
+      @title = title
+      binding.pry
      end
      def add_item(title,price,quantity = 1)
         @total+=price * quantity
