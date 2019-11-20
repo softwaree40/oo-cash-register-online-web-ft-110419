@@ -8,15 +8,7 @@ class CashRegister
      end
      def add_item(title,price,quantity = 1)
         @total+=price * quantity
-        if quantity < 1 
-          count = 0 
-           while counter < quantity
-        @items << item
-        counter += 1
-       end
-      else
-      @items << item
-    end
+        
      end
      def apply_discount
          discount = @total * (@discount.to_f / 100)
@@ -28,8 +20,15 @@ class CashRegister
        end
      end
      def items
-         @items << title
-        #binding.pry
-     end
+         if quantity < 1 
+          count = 0 
+          while counter < quantity
+        @items << item
+        counter += 1
+       end
+      else
+      @items << item
+    end
+ end
 end
 
