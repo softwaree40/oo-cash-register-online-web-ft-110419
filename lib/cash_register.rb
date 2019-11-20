@@ -20,8 +20,7 @@ class CashRegister
        end
      end
      def items
-       @items << @total
-       binding.pry
+      
   end
    
 end
