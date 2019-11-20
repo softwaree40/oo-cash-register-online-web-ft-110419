@@ -21,7 +21,8 @@ class CashRegister
      end
      def items
         add_item
-        binding.pry
+        
     end
+    binding.pry
 end
 
