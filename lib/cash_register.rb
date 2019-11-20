@@ -19,7 +19,7 @@ class CashRegister
         "There is no discount to apply."
        end
      end
-     def items(title,price,quantity = 0)
+     def items
         @@ll
          binding.pry
     end
