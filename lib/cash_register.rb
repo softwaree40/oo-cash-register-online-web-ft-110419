@@ -20,15 +20,7 @@ class CashRegister
        end
      end
      def items
-         if quantity < 1 
-          count = 0 
-          while counter < quantity
-        @items << item
-        counter += 1
-       end
-      else
-      @items << item
+         
     end
- end
 end
 
