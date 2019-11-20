@@ -20,7 +20,7 @@ class CashRegister
        end
      end
      def items
-       @all << add_item  
+       @all << add_item(title,price,quantity = 1)
     end
 end
 
