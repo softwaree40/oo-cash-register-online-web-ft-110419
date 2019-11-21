@@ -36,5 +36,7 @@ class CashRegister
       @all_array
       #binding.pry
   end
-   
+    def void_last_transaction
+      @quantity.times {|i|@total-=@price.pop}
+    end
 end
