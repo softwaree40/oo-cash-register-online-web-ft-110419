@@ -15,10 +15,13 @@ class CashRegister
          quantity.times do |i|
            @all_array.push(title) 
         #binding.pry
-      end
-        quantity.times do |i|
+         end
+         quantity.times do |i|
           @price.push(price)
-        end
+         end
+      end
+        
+      
      def apply_discount
          discount = @total * (@discount.to_f / 100)
          @total-=discount
