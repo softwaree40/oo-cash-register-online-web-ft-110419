@@ -5,15 +5,20 @@ class CashRegister
      def initialize(discount = 0)
       @total = 0
       @discount = discount
-      
+      @all_array = []
+      @price =[]
       #binding.pry
      end
      def add_item(title,price,quantity = 1)
-        @all_array = []
         @total+=price * quantity
-        @all_array << title 
+         @quantity = quantity
+         quantity.times do |i|
+           @all_array.push(title) 
         #binding.pry
-     end
+      end
+        quantity.times do |i|
+          @price.push(price)
+        end
      def apply_discount
          discount = @total * (@discount.to_f / 100)
          @total-=discount
