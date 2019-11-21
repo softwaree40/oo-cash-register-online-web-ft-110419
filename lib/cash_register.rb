@@ -34,7 +34,7 @@ class CashRegister
      
      def items
       @all_array
-      binding.pry
+      #binding.pry
   end
    
 end
