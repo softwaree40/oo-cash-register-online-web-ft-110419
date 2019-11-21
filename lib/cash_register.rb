@@ -39,6 +39,6 @@ class CashRegister
     def void_last_transaction
       @quantity.times {|i|@total-=@price.pop}
       @all_array.pop
-    end
+    
     end
 end
